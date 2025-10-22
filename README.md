@@ -33,13 +33,13 @@
 
 
 > [!NOTE]
-> Замечания и пожеланию по развитию шаблона разработки фиксируйте через [Issues](https://github.com/DirectumCompany/rx-template-smart-processing-nonformalized-doc/issues).
-При оформлении ошибки, опишите сценарий для воспроизведения. Для пожеланий приведите обоснование для описываемых изменений - частоту использования, бизнес-ценность, риски и/или эффект от реализации.
+> Замечания и пожелания по развитию шаблона разработки фиксируйте через [Issues](https://github.com/DirectumCompany/rx-template-smart-processing-nonformalized-doc/issues).
+При оформлении ошибки опишите сценарий для воспроизведения. Для пожеланий приведите обоснование для описываемых изменений - частоту использования, бизнес-ценность, риски и/или эффект от реализации.
 > 
 > Внимание! Изменения будут вноситься только в новые версии.
 
 ## Варианты расширения функциональности на проектах
-1.	Использовать блок в любых типах задач. Для реализации необходимо обязательно добавить приведение _obj к типу задачи, в рамках схемы которой, будет добавлен блок. Приведение добавляется на событии «Выполнение» блока Скрипт «Распознавание неформализованных документов эл. обмена.»
+1.	Использовать блок в любых типах задач. Для реализации необходимо обязательно добавить приведение _obj к типу задачи, в рамках схемы которой будет добавлен блок. Приведение добавляется на событии «Выполнение» блока Скрипт «Распознавание неформализованных документов эл. обмена.»
 2.	Изменить логику создания документов после обработки в переопределениях функций 
 - CreateSupAgreement
 - CreateWaybill
@@ -64,10 +64,10 @@
    GIT_ROOT_DIRECTORY: '<Папка из п.1>'
    REPOSITORIES:
       repository:
-      \-   '@folderName': 'work'
+      -   '@folderName': 'work'
           '@solutionType': 'Work'
           '@url': https://github.com/DirectumCompany/rx-template-smart-processing-nonformalized-doc'
-      \-   '@folderName': 'base'
+      -   '@folderName': 'base'
           '@solutionType': 'Base'
           '@url': ''
 ```
@@ -83,10 +83,10 @@
    GIT_ROOT_DIRECTORY: '<Папка из п.1>'
    REPOSITORIES:
       repository:
-      \-   '@folderName': 'work'
+      -   '@folderName': 'work'
           '@solutionType': 'Work'
           '@url': https://github.com/DirectumCompany/rx-template-smart-processing-nonformalized-doc'
-      \-   '@folderName': 'base'
+      -   '@folderName': 'base'
           '@solutionType': 'Base'
           '@url': ''
 ```
@@ -99,12 +99,15 @@
    GIT_ROOT_DIRECTORY: '<Папка из п.1>'
    REPOSITORIES:
       repository:
-      \-   '@folderName': 'work'
+      -   '@folderName': 'work'
           '@solutionType': 'Work'
-          '@url': https://github.com/DirectumCompany/rx-template-smart-processing-nonformalized-doc'
-      \-   '@folderName': 'base'
+          '@url': '<Адрес репозитория для рабочего слоя>'
+      -   '@folderName': 'base'
           '@solutionType': 'Base'
           '@url': ''
+      -   '@folderName': 'base'
+          '@solutionType': 'Base'
+          '@url': 'https://github.com/DirectumCompany/rx-template-smart-processing-nonformalized-doc'
 ```
 
 **C. Копирование репозитория в систему контроля версий.**
